@@ -41,3 +41,10 @@ TEST(template, TestString)
     ASSERT_STRCASENE("Hello", "World");
     ASSERT_STRCASENE("Hello", "world");
 }
+
+TEST(template, TestFloat)
+{
+    EXPECT_FLOAT_EQ(1.1f, 1.1f);
+    EXPECT_DOUBLE_EQ(1.1, 1.1);
+    EXPECT_NEAR(1.1, 1.5, 0.8);
+}
