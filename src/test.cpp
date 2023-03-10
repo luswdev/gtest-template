@@ -2,14 +2,14 @@
 
 TEST(template, TestBool)
 {
-    EXPECT_TRUE( 1 == 1);
-    EXPECT_FALSE( 1 == 0);
+    EXPECT_TRUE(1 == 1);
+    EXPECT_FALSE(1 == 0);
 }
 
 TEST(template, TestValue)
 {
     /* L == R */
-    EXPECT_EQ( 1, 1);
+    EXPECT_EQ(1, 1);
 
     /* L != R */
     EXPECT_NE(1, 0);
