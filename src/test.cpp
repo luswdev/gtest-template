@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 
-TEST(HelloTest, BasicAssertions)
+TEST(template, TestBool)
 {
-    EXPECT_STRNE("hello", "world");
-    EXPECT_EQ(7 * 6, 42);
+    EXPECT_TRUE( 1 == 1);
+    EXPECT_FALSE( 1 == 0);
 }
