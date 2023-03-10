@@ -28,3 +28,16 @@ TEST(template, TestValue)
     EXPECT_GE(2, 2);
     EXPECT_GE(2, 1);
 }
+
+TEST(template, TestString)
+{
+    EXPECT_STREQ("Hello", "Hello");
+    EXPECT_STRNE("Hello", "World");
+
+    /* ignore case */
+    EXPECT_STRCASEEQ("Hello", "Hello");
+    EXPECT_STRCASEEQ("Hello", "hello");
+
+    ASSERT_STRCASENE("Hello", "World");
+    ASSERT_STRCASENE("Hello", "world");
+}
